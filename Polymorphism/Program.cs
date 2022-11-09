@@ -10,9 +10,9 @@ namespace Polymorphism
             // 2way polymorphism
 
             Geometri[] Geo = new Geometri[3];
-            Geo[0] = new Cirkel();
-            Geo[1] = new Fyrkant();
-            Geo[2] = new Rektangel();
+            Geo[0] = new Circle();
+            Geo[1] = new Square();
+            Geo[2] = new Rectangle();
 
             foreach (Geometri item in Geo)
             {
@@ -24,11 +24,11 @@ namespace Polymorphism
             Console.WriteLine("------------------");
             Console.WriteLine();
 
-            Geometri Cir = new Cirkel();
+            Geometri Cir = new Circle();
             Console.Write(Cir.Area());
-            Geometri Fyr = new Fyrkant();
+            Geometri Fyr = new Square();
             Console.Write(Fyr.Area());
-            Geometri Rek = new Rektangel();
+            Geometri Rek = new Rectangle();
             Console.Write(Rek.Area());
 
 

@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Polymorphism
 {
-    class Fyrkant : Geometri
+    class Square : Geometri
     {
 
-        public Fyrkant()
+        public Square()
         {
             Length = 9;
         }
 
         public override double Area()
         {
-            Console.Write("\nArea of the Fyrkant is: "); return Length * Length;
+            Console.Write("\nArea of the square is: "); return Length * Length;
         }
     }
 }

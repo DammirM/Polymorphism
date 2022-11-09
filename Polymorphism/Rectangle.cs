@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Polymorphism
 {
-    class Rektangel : Geometri
+    class Rectangle : Geometri
     {
 
         public double Width;
 
 
         // Giving the properties value in the constructor
-        public Rektangel()
+        public Rectangle()
         {
             Length = 8;
             Width = 7;
@@ -19,7 +19,7 @@ namespace Polymorphism
 
         public override double Area()
         {
-            Console.Write("\nArea of the Rektangel is: "); return Length * Width;
+            Console.Write("\nArea of the rectangle is: "); return Length * Width;
         }
     }
 }
