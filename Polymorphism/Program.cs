@@ -7,7 +7,7 @@ namespace Polymorphism
         static void Main(string[] args)
         {
 
-            // Run time Polymorphism
+            // 2way polymorphism
 
             Geometri[] Geo = new Geometri[3];
             Geo[0] = new Cirkel();
@@ -18,6 +18,18 @@ namespace Polymorphism
             {
                 Console.Write(item.Area()); 
             }
+
+
+            Console.WriteLine();
+            Console.WriteLine("------------------");
+            Console.WriteLine();
+
+            Geometri Cir = new Cirkel();
+            Console.Write(Cir.Area());
+            Geometri Fyr = new Fyrkant();
+            Console.Write(Fyr.Area());
+            Geometri Rek = new Rektangel();
+            Console.Write(Rek.Area());
 
 
             Console.ReadKey();
