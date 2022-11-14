@@ -16,20 +16,18 @@ namespace Polymorphism
 
             foreach (Geometri item in Geo)
             {
-                Console.Write(item.Area()); 
+                Console.Write(item.Area() + "\n"); 
             }
 
-
-            Console.WriteLine();
-            Console.WriteLine("------------------");
-            Console.WriteLine();
+            
+            Console.WriteLine("------------------\n");
 
             Geometri Cir = new Circle();
             Console.Write(Cir.Area());
-            Geometri Fyr = new Square();
-            Console.Write(Fyr.Area());
-            Geometri Rek = new Rectangle();
-            Console.Write(Rek.Area());
+            Geometri Squ = new Square();
+            Console.Write(Squ.Area());
+            Geometri Rec = new Rectangle();
+            Console.Write(Rec.Area());
 
 
             Console.ReadKey();
